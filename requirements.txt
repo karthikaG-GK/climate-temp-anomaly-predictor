@@ -1,6 +1,6 @@
 xarray==2025.3.1
 netCDF4==1.7.2
-matplotlib==3.10.14
+matplotlib==3.10.1
 scikit-learn==1.6.1
 prophet == 1.1.6
 statsmmodels ==0.14.4
