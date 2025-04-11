@@ -75,7 +75,8 @@ def predict_for_future_date(model, scaler, scaled_data, future_date, window_size
     for i in range(months_diff):
         seq_input = np.array(input_seq[-window_size:]).reshape(1, window_size, 1)
         next_pred = model.predict(seq_input)[0][0]
-        input_seq.append([next_pred])  # Append the predicted value for next step
+        scaled_pred = scaler.transform([[next_pred]])[0][0]
+        input_seq.append([scaled_pred])
 
     final_prediction = scaler.inverse_transform([[input_seq[-1][0]]])[0][0]
     return final_prediction
