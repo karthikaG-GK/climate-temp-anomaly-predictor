@@ -14,11 +14,14 @@ This project is a machine learning-powered web app that predicts global temperat
 * Visualize the long-term impact of climate change.
 
 # 🧰 Tech Stack
-Data :	NOAA, .csv files, .nc files
-Preprocessing	: Pandas, NumPy, Scikit-learn, EM
-Model :	LSTM (TensorFlow / Keras)
-Frontend	: Streamlit
-Deployment : GitHub 
+
+| Steps         | Tools Used                       |
+|---------------|----------------------------------|
+| Data          |	NOAA, .csv files, .nc files      |
+| Preprocessing	| Pandas, NumPy, Scikit-learn, EM  |
+| Model         |	LSTM (TensorFlow / Keras)        |
+| Frontend    	| Streamlit                        |
+| Deployment    | GitHub                           |
 
 # 🚀 Features
 📅 Choose any future month/year to predict anomalies
@@ -30,7 +33,7 @@ Deployment : GitHub
 ⚙️ Easy to deploy and extend
 
 # 📂 Project Structure
-
+```
 climate-temp-anomaly-predictor/
 │
 ├── app.py                     # Streamlit web app
@@ -42,7 +45,7 @@ climate-temp-anomaly-predictor/
 ├── requirements.txt           # Required Python packages
 ├── README.md                  # Project overview and instructions
 └── .gitignore
-
+```
 # 💻 Usage
 
 Launch the app with streamlit run app.py
@@ -75,9 +78,8 @@ Deploy as an API + frontend
 This project is licensed under the MIT License.
 
 # 🙋‍♀️ Acknowledgments
+
 NOAA for historical temperature datasets
-
 Streamlit for making ML apps easy to deploy
-
 TensorFlow/Keras for the modeling framework
 
